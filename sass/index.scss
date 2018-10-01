@@ -1,3 +1,21 @@
 @import "normalize";
 @import "mixin";
 @import "common";
+
+nav {
+	.logo {
+		.logo-pic {
+			height: 40px;
+		}
+		.logo-str {
+			height: 26px;
+		}
+	}
+	ul {
+		list-style-type: none;
+		display:inline;
+		li {
+			display: inline;
+		}
+	}
+}

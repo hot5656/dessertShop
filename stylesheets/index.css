@@ -375,3 +375,20 @@ template {
 	}
 } 
 */
+/* line 7, ../sass/index.scss */
+nav .logo .logo-pic {
+  height: 40px;
+}
+/* line 10, ../sass/index.scss */
+nav .logo .logo-str {
+  height: 26px;
+}
+/* line 14, ../sass/index.scss */
+nav ul {
+  list-style-type: none;
+  display: inline;
+}
+/* line 17, ../sass/index.scss */
+nav ul li {
+  display: inline;
+}

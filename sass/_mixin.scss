@@ -1,0 +1,44 @@
+$v-xl:1200px;
+$v-lg:992px;
+$v-md:768px;
+$v-sm:576px;
+$v-xm:575px;
+
+@mixin s-xl{
+	@media (min-width:v-xl) {
+		@content
+	}
+}
+@mixin s-lg{
+	@media (min-width:v-lg) {
+		@content
+	}
+}  
+@mixin s-md{
+	@media (min-width:v-md) {
+		@content
+	}
+} 
+@mixin s-sm{
+	@media (min-width:v-sm) {
+		@content
+	}
+} 
+@mixin s-xm{
+	@media (man-width:v-xl) {
+		@content
+	}
+}
+
+/* 
+.header {
+	width: 100px;
+	height:100px;
+	@include s-md {
+		heigh: auto;
+	}
+	@include s-xm {
+		height: 300px;
+	}
+} 
+*/

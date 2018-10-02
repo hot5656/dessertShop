@@ -1,0 +1,24 @@
+{
+  "name": "dessertshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css-compile-sw": "node-sass -w --output-style expanded --source-map true --source-map-contents true --precision 6 sass/index.scss stylesheets/index.css",
+    "start": "./node_modules/.bin/browser-sync start --server --no-notify --files=`index.html, *.js, stylesheets/*.css`"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hot5656/dessertShop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hot5656/dessertShop/issues"
+  },
+  "homepage": "https://github.com/hot5656/dessertShop#readme",
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "browser-sync": "^2.24.7"
+  }
+}

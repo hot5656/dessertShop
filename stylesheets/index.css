@@ -1,394 +1,79 @@
-/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-/* line 11, ../sass/_normalize.scss */
-html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
-/* line 23, ../sass/_normalize.scss */
-body {
-  margin: 0;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-/* line 32, ../sass/_normalize.scss */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-/* line 45, ../sass/_normalize.scss */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-/* line 56, ../sass/_normalize.scss */
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Remove the gray background on active links in IE 10.
- */
-/* line 68, ../sass/_normalize.scss */
-a {
-  background-color: transparent;
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-/* line 77, ../sass/_normalize.scss */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-/* line 87, ../sass/_normalize.scss */
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-/* line 97, ../sass/_normalize.scss */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-/* line 108, ../sass/_normalize.scss */
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-/* line 117, ../sass/_normalize.scss */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-/* line 125, ../sass/_normalize.scss */
-sub {
-  bottom: -0.25em;
-}
-
-/* line 129, ../sass/_normalize.scss */
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10.
- */
-/* line 140, ../sass/_normalize.scss */
-img {
-  border-style: none;
-}
-
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-/* line 152, ../sass/_normalize.scss */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-/* line 168, ../sass/_normalize.scss */
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-/* line 178, ../sass/_normalize.scss */
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-/* line 187, ../sass/_normalize.scss */
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-/* line 198, ../sass/_normalize.scss */
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-/* line 210, ../sass/_normalize.scss */
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-/* line 221, ../sass/_normalize.scss */
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-/* line 232, ../sass/_normalize.scss */
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-/* line 245, ../sass/_normalize.scss */
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-/* line 253, ../sass/_normalize.scss */
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-/* line 262, ../sass/_normalize.scss */
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-/* line 272, ../sass/_normalize.scss */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-/* line 282, ../sass/_normalize.scss */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-/* line 291, ../sass/_normalize.scss */
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-/* line 300, ../sass/_normalize.scss */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
 /*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-/* line 312, ../sass/_normalize.scss */
-details {
-  display: block;
-}
+Error: File to import not found or unreadable: breakpoint.
+       Load paths:
+         Compass::SpriteImporter
+         C:/work/git/html/github/dessertShop/sass
+         C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets
+        on line 5 of C:/work/git/html/github/dessertShop/sass/_code.scss
+        from line 4 of C:/work/git/html/github/dessertShop/sass/index.scss
 
-/*
- * Add the correct display in all browsers.
- */
-/* line 320, ../sass/_normalize.scss */
-summary {
-  display: list-item;
-}
+1: @import "normalize";
+2: @import "mixin";
+3: @import "common";
+4: @import "code";
+5: 
+6: * {
+7: 	box-sizing: border-box;
+8: }
+9: 
+10: // img {
 
-/* Misc
-   ========================================================================== */
-/**
- * Add the correct display in IE 10+.
- */
-/* line 331, ../sass/_normalize.scss */
-template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-/* line 339, ../sass/_normalize.scss */
-[hidden] {
-  display: none;
-}
-
-/* 
-.header {
-	width: 100px;
-	height:100px;
-	@include s-md {
-		heigh: auto;
-	}
-	@include s-xm {
-		height: 300px;
-	}
-} 
+Backtrace:
+C:/work/git/html/github/dessertShop/sass/_code.scss:5
+C:/work/git/html/github/dessertShop/sass/index.scss:4
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:44:in `import'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `map'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `block in with_import'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `with_import'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
 */
-/* line 7, ../sass/index.scss */
-nav .logo .logo-pic {
-  height: 40px;
-}
-/* line 10, ../sass/index.scss */
-nav .logo .logo-str {
-  height: 26px;
-}
-/* line 14, ../sass/index.scss */
-nav ul {
-  list-style-type: none;
-  display: inline;
-}
-/* line 17, ../sass/index.scss */
-nav ul li {
-  display: inline;
-}
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: breakpoint.\A        Load paths:\A          Compass::SpriteImporter\A          C:/work/git/html/github/dessertShop/sass\A          C:/simple tool/dynamic/rubyinstaller-2.5.1-x-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets\A         on line 5 of C:/work/git/html/github/dessertShop/sass/_code.scss\A         from line 4 of C:/work/git/html/github/dessertShop/sass/index.scss\A \A 1: @import \"normalize\";\A 2: @import \"mixin\";\A 3: @import \"common\";\A 4: @import \"code\";\A 5: \A 6: * {\A 7: 	box-sizing: border-box;\A 8: }\A 9: \A 10: // img {"; }
